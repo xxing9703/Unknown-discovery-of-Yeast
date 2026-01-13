@@ -1,0 +1,17 @@
+function pks=pks_addms1_all(pks,M,settings)
+    settings.ppm=5e-6;
+    pks=pks_addnatinfo(pks,M,settings,'13C');
+    settings.ppm=3e-6; %narrow ppm for 18O
+    pks=pks_addnatinfo(pks,M,settings,'18O');
+    settings.ppm=5e-6;
+    pks=pks_addnatinfo(pks,M,settings,'37Cl');
+    pks=pks_addnatinfo(pks,M,settings,'dbl');
+    pks=pks_addnatinfo(pks,M,settings,'13Cdbl');
+    settings.ppm=3e-6; %narrow ppm for Na
+    pks=pks_addnatinfo(pks,M,settings,'Na');
+    settings.ppm=5e-6;
+    pks=pks_addms1info(pks,M,settings,'13C');
+    pks=pks_addms1info(pks,M,settings,'34S');
+    pks=pks_addms1info(pks,M,settings,'37Cl');
+    settings.ppm=3e-6; %narrow ppm for 18O
+    pks=pks_addms1info(pks,M,settings,'18O');

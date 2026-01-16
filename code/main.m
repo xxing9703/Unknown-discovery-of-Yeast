@@ -41,9 +41,10 @@ pks=pks_addformulainfo(pks,md);
 
 figure2
 
-%%
-addpath('deepmet');
-pks=pks_add_deepmet(pks,settings);
+%%  add deepmet predictions, requires deepmet in-silico library
+
+% addpath('deepmet');
+% pks=pks_add_deepmet(pks,settings);
 
 
 %%

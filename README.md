@@ -5,7 +5,7 @@
 This repository contains the main **MATLAB** code pipeline for processing untargeted LC-MS metabolomics data from yeast. The pipeline includes the following steps:
 
 - Extract peak intensities across datasets.  
-- Annotate isotopes, adducts, and other types of artifacts.  
+- Annotate isotopes, adducts, in-source fragment (using additional AIF data) and other redundencies.
 - Extract carbon information from isotopic data.  
 - Assign molecular formulas based on carbon information.  
 - Match formulas against HMDB/YMDB databases.  
